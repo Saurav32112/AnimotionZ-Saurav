@@ -1,0 +1,399 @@
+@media (max-width:1366px) {
+    .company-about .about-content .content-para {
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    .company-service .accordion-item h2 button {
+        font-size: 36px;
+    }
+    .company-service .item-content .accordion-body {
+        font-size: 26px;
+    }
+    .section__container {
+        padding-top: 8vh;
+    }
+    .section {
+        padding: 80px 0px 0px;
+    }
+    .company-serve .serve-head button .item-number {
+        margin-right: 40px;
+    }
+    .company-serve .serve-head button {
+        font-size: 30px;
+    }
+    .row--height-100 {
+        height: 80vh;
+    }
+    .company-contact {
+        padding: 80px 0px 0px 0px;
+    }
+    .company-serve .content-line .tab-pane {
+        font-size: 20px;
+        padding-right: 70px;
+    }
+    .company-progress .customreviews .customer-number .review-text h2 {
+        font-size: 40px;
+    }
+    .company-service .item-content {
+        padding: 132px 0px 0;
+    }
+    .company-contact .contact-content .contact-form {
+        padding: 67px 0px 0px;
+    }
+}
+
+@media (max-width:1199px) {
+    .company-serve .serve-head button {
+        font-size: 27px;
+    }
+    .introduce .intro-head {
+        left: -1%;
+    }
+    .company-contact .contact-content .contact-form {
+        padding: 90px 0px 0px;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar .navbar-brand img {
+        width: 200px;
+    }
+    .header__action {
+        margin-top: 1rem;
+    }
+    .introduce .intro-head h3 {
+        font-size: 16px;
+    }
+    .introduce .intro-head {
+        left: 5%;
+    }
+    .introduce .intro-head h2 {
+        font-size: 45px;
+    }
+    .content-para {
+        padding: 0 100px;
+    }
+    .company-about .about-content .content-para p {
+        font-size: 16px;
+    }
+    .about-img {
+        text-align: center;
+    }
+    .company-serve .content-line::before {
+        top: -30px;
+    }
+    .company-progress .customreviews .customer-number .review-text {
+        padding: 30px;
+    }
+    .company-progress .customreviews .customer-number .review-text p {
+        font-size: 25px;
+    }
+    .company-service .accordion-item h2 button::before {
+        left: 150px;
+        bottom: 36px;
+        height: 3px;
+        width: 30px;
+    }
+    .company-service .accordion-item h2 button::after {
+        position: absolute;
+        left: 150px;
+        bottom: 36px;
+        height: 3px;
+        width: 30px;
+    }
+    .company-contact .contact-content .contact-form {
+        padding: 105px 0px 0px;
+    }
+    .company-contact .rights-line {
+        margin-top: 60px;
+    }
+    .company-progress .customreviews {
+        padding-top: 8vh;
+    }
+    .company-service .section-head h4 {
+        font-size: 64px;
+    }
+    .company-about .section-head h4 {
+        font-size: 64px;
+    }
+    .company-serve .section-head h4 {
+        font-size: 64px;
+    }
+    .company-progress .section-head h4 {
+        font-size: 64px;
+    }
+    .company-clients .section-head h4 {
+        font-size: 64px;
+    }
+    .company-contact .section-head h4 {
+        font-size: 64px;
+    }
+    .company-about .about-content {
+        padding-top: 8vh;
+    }
+    .company-serve .serve-content {
+        padding-top: 8vh;
+    }
+    .company-serve .service-content {
+        padding-top: 8vh;
+    }
+    .company-clients .logo-slide {
+        padding-top: 24vh;
+    }
+    .company-clients .logo-slide .item {
+        height: 24vw;
+    }
+}
+
+@media (max-width:767px) {
+    .dots-menu-navigation .dots-menu-dot {
+        width: 14px;
+        height: 14px;
+    }
+    .dots-menu-navigation .dots-menu-label {
+        font-size: 14px
+    }
+    .intro__description {
+        padding-top: 0;
+    }
+    .about-img img {
+        width: 500px;
+    }
+    .content-para {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .company-service .accordion-item h2 button {
+        font-size: 28px;
+    }
+    .company-service .accordion-item h2 button::before {
+        left: 120px;
+        bottom: 36px;
+    }
+    .company-service .accordion-item h2 button::after {
+        position: absolute;
+        left: 120px;
+        bottom: 36px;
+    }
+    .company-service .item-content .accordion-body {
+        font-size: 20px;
+    }
+    .company-service .item-content .service-img img {
+        width: 110px;
+    }
+    .navbar .navbar-brand img {
+        width: 175px;
+    }
+    .company-serve .content-line .tab-pane {
+        font-size: 18px;
+        padding-top: 50px;
+    }
+    .company-serve .tab-img .tab-pane img {
+        margin-top: 30px;
+    }
+    .company-serve .content-line::before {
+        top: 15px;
+    }
+    .border-r {
+        border-right: none !important;
+    }
+    .company-progress .customreviews .customer-number .review-text p {
+        font-size: 20px;
+    }
+    .company-contact .contact-content .contact-form .company-info .co-add,
+    .company-contact .contact-content .contact-form .company-info .co-email {
+        margin-bottom: 10px;
+    }
+    .company-contact .contact-content .contact-form .company-info {
+        padding: 50px 30px 0;
+    }
+    .company-info h4 {
+        font-size: 20px;
+    }
+    .company-contact .contact-content .contact-form .company-info .co-add p,
+    .company-contact .contact-content .contact-form .company-info .co-email p,
+    .company-contact .contact-content .contact-form .company-info .co-number p {
+        font-size: 16px;
+    }
+    .company-progress .customreviews .customer-number .review-text h2 {
+        font-size: 32px;
+    }
+    .company-progress .customreviews .customer-number .review-text p {
+        font-size: 18px;
+    }
+    .company-contact .contact-content .contact-form {
+        padding: 40px 0px 0px;
+    }
+    .introduce .intro-head {
+        left: 12%;
+    }
+    .company-serve .tab-img .tab-pane img {
+        width: 22%;
+    }
+}
+
+@media (max-width:575px) {
+    .dots-menu-navigation .dots-menu-dot {
+        width: 12px;
+        height: 12px;
+    }
+    .dots-menu-navigation .dots-menu-label {
+        font-size: 12px
+    }
+    .content-para {
+        font-size: 16px;
+        padding: 0 60px;
+    }
+    .company-service .accordion-item h2 button::before,
+    .company-service .accordion-item h2 button::after {
+        left: 30px;
+        bottom: 28px;
+    }
+    .company-service .accordion-item h2 button {
+        font-size: 25px;
+    }
+    .section {
+        padding: 40px 0;
+    }
+    .company-serve .serve-head button {
+        font-size: 24px;
+        padding-left: 70px;
+    }
+    .company-contact .contact-content .contact-form .company-info {
+        padding: 50px 0 0;
+    }
+    .company-info h4 {
+        font-size: 18px;
+    }
+    .contact {
+        padding-bottom: 0;
+    }
+    .company-progress .customreviews .customer-number .review-text {
+        padding: 30px 0 0;
+    }
+    .company-progress .customreviews .customer-number .review-text p br {
+        display: none;
+    }
+    .introduce .intro-head {
+        left: 1%;
+    }
+    .introduce .intro-head h2 {
+        font-size: 32px;
+        color: #ffffff;
+    }
+    .introduce .intro-head h3 {
+        padding-top: 8px;
+        color: #ffffff;
+    }
+    .navbar .user-copmfort a p {
+        margin-top: 16px;
+    }
+    .company-contact {
+        padding: 40px 0px 0px 0px;
+    }
+    .company-serve .serve-head button {
+        color: #ffffff;
+    }
+    .company-clients .logo-slide .item {
+        height: 34vw;
+    }
+}
+
+@media (max-width:480px) {
+    .dots-menu-navigation .dots-menu-dot {
+        width: 10px;
+        height: 10px;
+    }
+    .navbar .navbar-brand img {
+        width: 140px;
+    }
+    .about-img img {
+        width: 350px;
+    }
+    .content-para {
+        padding: 0 30px;
+    }
+    .company-service .accordion-item h2 button::before,
+    .company-service .accordion-item h2 button::after {
+        left: 16px;
+        bottom: 28px;
+        width: 20px;
+    }
+    .company-service .accordion-item h2 button {
+        font-size: 22px;
+    }
+    .company-service .item-content {
+        padding: 50px 0px 0;
+    }
+    .company-service .item-content .service-img img {
+        width: 80px;
+    }
+    .company-service .item-content .accordion-body {
+        font-size: 16px;
+        padding: 25px 25px 0;
+    }
+    .company-serve .serve-head button {
+        font-size: 22px;
+        padding-left: 30px;
+    }
+    .company-serve .content-line .tab-pane {
+        font-size: 16px;
+        padding-top: 40px;
+        padding-right: 20px;
+    }
+    .company-progress .customreviews {
+        padding: 36px 0px 0px;
+    }
+    .introduce .intro-head {
+        left: 3%;
+    }
+    .company-about .about-content {
+        padding-top: 5vh;
+    }
+    .company-serve .serve-content {
+        padding-top: 5vh;
+    }
+    .company-serve .service-content {
+        padding-top: 5vh;
+    }
+    /* .company-clients .logo-slide {
+        padding-top: 5vh;
+    } */
+}
+
+@media (max-width:414px) {
+    .company-serve .serve-head button .item-number {
+        margin-right: 24px;
+        font-size: 20px;
+    }
+    .company-serve .serve-head button span {
+        font-size: 20px;
+    }
+    .introduce .intro-head {
+        left: 1%;
+    }
+}
+
+@media (max-width:360px) {
+    .about-img img {
+        width: 250px;
+    }
+    .company-service .accordion-item h2 button {
+        font-size: 18px;
+    }
+    .company-service .item-content .accordion-body {
+        font-size: 15px;
+    }
+    .company-serve .serve-head button span {
+        font-size: 18px;
+    }
+    .company-progress .customreviews .customer-number .review-text h2 {
+        font-size: 26px;
+    }
+    .company-progress .customreviews .customer-number .review-text p {
+        font-size: 16px;
+    }
+    .introduce .intro-head {
+        left: 0%;
+    }
+}

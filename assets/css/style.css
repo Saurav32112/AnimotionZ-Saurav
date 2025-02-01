@@ -1,0 +1,850 @@
+body,
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: #000;
+    background-color: #f4f4f4;
+    transition: background-color 1s ease;
+    font-family: 'Montserrat';
+}
+
+
+/* panel styles */
+
+.panel {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* colours */
+
+.color-white {
+    background-color: #000;
+}
+
+.color-violet {
+    background-color: #880402a1;
+}
+
+.color-indigo {
+    background-color: #9e9e9e66;
+}
+
+.color-blue {
+    background-color: #000;
+}
+
+.color-green {
+    background-color: #880402a1;
+}
+
+.color-yellow {
+    background-color: #9e9e9e66;
+}
+
+.color-orange {
+    background-color: #000;
+}
+
+@font-face {
+    font-family: XXII Geom Slab;
+    font-weight: 400;
+    src: url("../font/xxii-geom-slab-regular.otf");
+    font-display: swap;
+}
+
+.border-r {
+    border-right: 2px solid #ffffff29 !important;
+}
+
+.dots-menu-navigation {
+    position: fixed;
+    right: 31px;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: opacity 0.615s ease-in-out 0s;
+    transition: opacity 0.615s ease-in-out 0s;
+    z-index: 30;
+}
+
+.dots-menu-navigation ul {
+    list-style: none;
+    margin: 0;
+}
+
+.dots-menu-navigation li {
+    text-align: right;
+    line-height: 1;
+}
+
+.dots-menu-navigation a {
+    display: inline-block;
+    margin: 2px 0;
+}
+
+.dots-menu-navigation a span {
+    display: inline-block;
+    float: right;
+}
+
+.dots-menu-navigation .dots-menu-dot {
+    position: relative;
+    top: 4px;
+    right: 2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ffffff80;
+    -webkit-transition: background 0.215s ease-in-out 0s, border 0.215s ease-in-out 0s, -webkit-transform 0.215s ease-in-out 0s;
+    transition: background 0.215s ease-in-out 0s, border 0.215s ease-in-out 0s, transform 0.215s ease-in-out 0s;
+}
+
+.dots-menu-navigation.dark .dots-menu-dot {
+    border-color: #28282E;
+    background-color: rgba(40, 40, 46, 0.35);
+}
+
+.dots-menu-navigation a.is-selected .dots-menu-dot {
+    position: relative;
+    left: -0.1 0.5vw;
+    background-color: #880402;
+    border-radius: 0;
+    height: 1.5vw;
+    width: 0.3vw;
+    cursor: default;
+}
+
+.dots-menu-navigation a:hover .dots-menu-dot {
+    background-color: #FFFFFF;
+}
+
+.dots-menu-navigation.dark a.is-selected .dots-menu-dot {
+    position: relative;
+    left: -0.1 0.5vw;
+    background-color: #880402;
+    border-radius: 0;
+    height: 1.5vw;
+    width: 0.3vw;
+    cursor: default;
+}
+
+.dots-menu-navigation.dark a:hover .dots-menu-dot {
+    background-color: #FFFFFF;
+}
+
+.dots-menu-navigation .dots-menu-label {
+    position: relative;
+    margin-right: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0;
+    -webkit-transition: opacity 0.215s ease-in-out 0s;
+    transition: opacity 0.215s ease-in-out 0s;
+}
+
+.dots-menu-navigation.dark .dots-menu-label {
+    color: #28282E;
+}
+
+.dots-menu-navigation a:hover .dots-menu-label {
+    opacity: 1;
+}
+
+.dots-menu-navigation .is-selected .dots-menu-label {
+    opacity: 0;
+}
+
+.navbar {
+    padding: 16px 32px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.navbar .user-copmfort a {
+    text-decoration: none;
+}
+
+.navbar .user-copmfort a p {
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 16px;
+    color: #880402;
+    margin-bottom: 0;
+    margin-top: 32px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.navbar .user-copmfort a p:hover {
+    color: #ffffff;
+}
+
+.introduce {
+    position: relative;
+}
+
+.introduce .intro-head {
+    position: absolute;
+    left: 9%;
+    top: 40%;
+    text-align: center;
+}
+
+.introduce .intro-head:hover h2 span {
+    opacity: 1;
+}
+
+.introduce .intro-head h2 {
+    font-size: 80px;
+    font-weight: 500;
+    color: #ffffff80;
+}
+
+.introduce .intro-head h2 span {
+    color: #880402;
+    opacity: 0.5;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.introduce .intro-head h3 {
+    padding-top: 28px;
+    letter-spacing: 3.2px;
+    color: #ffffff80;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.company-about {
+    padding: 140px 0px;
+    position: relative;
+}
+
+.company-about .section-head h4 {
+    color: #ffffff66;
+    font-size: 7vw;
+    font-weight: 400;
+    font-family: XXII Geom Slab;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transform: translateX(10vw);
+    transform: translateX(10vw);
+}
+
+.company-about .section-head h4 span {
+    padding: 1vw 0;
+    white-space: nowrap;
+}
+
+.company-about .section-head h4 span::after {
+    content: ".";
+    display: inline-block;
+    padding: 0px 4vw;
+}
+
+.company-about .about-content {
+    padding-top: 15vh;
+}
+
+.company-about .about-content .content-para {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff8f;
+}
+
+
+/* .company-about .about-content .about-img img {
+    width: 100%;
+} */
+
+.company-service {
+    padding: 140px 0px;
+    position: relative;
+}
+
+.company-service .section-head h4 {
+    color: #00000030;
+    font-size: 7vw;
+    font-weight: 400;
+    font-family: XXII Geom Slab;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transform: translateX(10vw);
+    transform: translateX(10vw);
+}
+
+.company-service .section-head h4 span {
+    padding: 1vw 0;
+    white-space: nowrap;
+}
+
+.company-service .section-head h4 span::after {
+    content: ".";
+    display: inline-block;
+    padding: 0px 4vw;
+}
+
+.company-service .accordion-item {
+    background-color: transparent;
+    border: none;
+}
+
+.company-service .accordion-item h2 button {
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: XXII Geom Slab;
+    font-weight: 500;
+    font-size: 44px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.company-service .accordion-item h2 button:hover {
+    color: #880402;
+}
+
+.company-service .accordion-item h2 button::after {
+    margin: 32px auto 0px 0px;
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #000;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.company-service .accordion-item h2 button::before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #000;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+}
+
+.company-service .service-content {
+    padding-top: 15vh;
+}
+
+.company-service .accordion-item h2 button:not(.collapsed) {
+    color: #880402;
+}
+
+.company-service .accordion-item h2 button:not(.collapsed)::after {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-color: #880402;
+}
+
+.company-service .accordion-item h2 button:not(.collapsed):hover {
+    color: #880402;
+}
+
+.company-service .item-content {
+    padding: 132px 0px;
+}
+
+.company-service .item-content .accordion-body {
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+}
+
+.company-service .item-content .service-img img {
+    width: 150px;
+}
+
+.company-serve {
+    padding: 140px 0px;
+    position: relative;
+}
+
+.company-serve .section-head h4 {
+    color: #ffffff;
+    font-size: 7vw;
+    font-weight: 400;
+    font-family: XXII Geom Slab;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transform: translateX(10vw);
+    transform: translateX(10vw);
+}
+
+.company-serve .section-head h4 span {
+    padding: 1vw 0;
+    white-space: nowrap;
+}
+
+.company-serve .section-head h4 span::after {
+    content: ".";
+    display: inline-block;
+    padding: 0px 4vw;
+}
+
+.company-serve .serve-head {
+    background-color: transparent;
+    border: none;
+}
+
+.company-serve .serve-head button {
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    font-family: XXII Geom Slab;
+    font-weight: 500;
+    font-size: 32px;
+    text-align: start;
+    color: #ffffff80;
+}
+
+.company-serve .serve-head button .item-number {
+    margin-right: 112px;
+    font-size: 24px;
+    font-family: 'Montserrat';
+}
+
+.company-serve .serve-head button:hover {
+    color: #ffffff;
+}
+
+.company-serve .serve-head .active {
+    background-color: transparent;
+    color: #880402;
+}
+
+.company-serve .serve-head .active:hover {
+    color: #880402;
+}
+
+.company-serve .serve-content {
+    padding-top: 15vh;
+}
+
+.company-serve .content-line {
+    position: relative;
+}
+
+.company-serve .content-line::before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #880402;
+    position: absolute;
+    top: -75px;
+}
+
+.company-serve .content-line .tab-pane {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.company-serve .tab-img .tab-pane {
+    text-align: center;
+}
+
+.company-serve .tab-img .tab-pane img {
+    width: 46%;
+}
+
+.company-progress {
+    padding: 140px 0px;
+    position: relative;
+}
+
+.company-progress .section-head h4 {
+    color: #cfcfcf;
+    font-size: 7vw;
+    font-weight: 400;
+    font-family: XXII Geom Slab;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transform: translateX(10vw);
+    transform: translateX(10vw);
+}
+
+.company-progress .section-head h4 span {
+    padding: 1vw 0;
+    white-space: nowrap;
+}
+
+.company-progress .section-head h4 span::after {
+    content: ".";
+    display: inline-block;
+    padding: 0px 4vw;
+}
+
+.company-progress .customreviews {
+    padding-top: 15vh;
+}
+
+.company-progress .customreviews .customer-number .review-text {
+    text-align: center;
+}
+
+.company-progress .customreviews .customer-number .review-text h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+}
+
+.company-progress .customreviews .customer-number .review-text h2::after {
+    content: "+";
+    position: absolute;
+}
+
+.company-progress .customreviews .customer-number .review-text p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #00000075;
+}
+
+.company-clients {
+    padding: 140px 0px;
+    position: relative;
+}
+
+.company-clients .section-head h4 {
+    color: #00000030;
+    font-size: 10vw;
+    font-weight: 400;
+    font-family: XXII Geom Slab;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transform: translateX(10vw);
+    transform: translateX(10vw);
+}
+
+.company-clients .section-head h4 span {
+    padding: 1vw 0;
+    white-space: nowrap;
+}
+
+.company-clients .section-head h4 span::after {
+    content: ".";
+    display: inline-block;
+    padding: 0px 4vw;
+}
+
+.company-clients .logo-slide {
+    padding-top: 15vh;
+}
+
+.company-clients .logo-slide .item {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    height: 14vw;
+    background-color: rgba(0, 0, 0, .2);
+    transition: background-color .3s ease-in-out;
+}
+
+.company-clients .logo-slide .item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* .company-clients .logo-slide .item img {
+    background-color: #00000030;
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}*/
+
+.company-clients .logo-slide .item:hover {
+    background-color: #FFF;
+}
+
+.company-clients .logo-slide .owl-dots {
+    margin-top: 40px !important;
+}
+
+.company-clients .logo-slide .owl-dots .owl-dot span {
+    background-color: #00000075;
+}
+
+.company-clients .logo-slide .owl-dots .active span {
+    background-color: #880402;
+}
+
+.company-contact {
+    padding: 115px 0px 0px;
+    position: relative;
+}
+
+.company-contact .section-head h4 {
+    color: #ffffff80;
+    font-size: 10vw;
+    font-weight: 400;
+    font-family: XXII Geom Slab;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-transform: translateX(10vw);
+    transform: translateX(10vw);
+}
+
+.company-contact .section-head h4 span {
+    padding: 1vw 0;
+    white-space: nowrap;
+}
+
+.company-contact .section-head h4 span::after {
+    content: ".";
+    display: inline-block;
+    padding: 0px 4vw;
+}
+
+.company-contact .contact-content .contact-form {
+    padding: 40px 0px 0px;
+}
+
+.company-contact .contact-content .contact-form .c-from {
+    padding: 0px 16px;
+}
+
+.company-contact .contact-content .contact-form .c-from input {
+    margin-bottom: 23px;
+    border-bottom: 1px solid #ffffff75;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 14px 14px 14px 4px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.company-contact .contact-content .contact-form .c-from input::placeholder {
+    color: #ffffff80;
+}
+
+.company-contact .contact-content .contact-form .c-from input:focus {
+    background-color: transparent;
+}
+
+.company-contact .contact-content .contact-form .c-from input:-internal-autofill-selected {
+    background-color: transparent;
+}
+
+.company-contact .contact-content .contact-form .c-from textarea {
+    border-bottom: 1px solid #ffffff75;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 14px 14px 14px 4px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.company-contact .contact-content .contact-form .c-from textarea::placeholder {
+    color: #ffffff80;
+}
+
+.company-contact .contact-content .contact-form .c-from button {
+    background-color: #880402;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    width: 32%;
+    padding: 6px 12px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.company-contact .contact-content .contact-form .c-from button:hover {
+    background-color: transparent;
+    border: 1px solid #880402;
+    color: #880402;
+}
+
+.company-contact .contact-content .contact-form .company-info {
+    padding: 0px 16px 0px 0px;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-add {
+    margin-bottom: 64px;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-add h4 {
+    color: #ffffff;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-add p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-add .touch-img {
+    text-align: end;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-add .touch-img i {
+    font-size: 20px;
+    padding: 12px 14px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-add .touch-img i:hover {
+    color: #880402;
+    border: 1px solid #880402;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-email {
+    margin-bottom: 64px;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-email h4 {
+    color: #ffffff;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-email p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-email .touch-img {
+    text-align: end;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-email .touch-img i {
+    font-size: 20px;
+    padding: 12px 12px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-email .touch-img i:hover {
+    color: #880402;
+    border: 1px solid #880402;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-number h4 {
+    color: #ffffff;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-number p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-number .touch-img {
+    text-align: end;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-number .touch-img i {
+    font-size: 20px;
+    padding: 12px 14px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.company-contact .contact-content .contact-form .company-info .co-number .touch-img i:hover {
+    color: #880402;
+    border: 1px solid #880402;
+}
+
+.company-contact .rights-line {
+    margin-top: 46px;
+    padding: 9px 0px;
+    text-align: center;
+    border-top: 1px solid #ffffff2e;
+}
+
+.company-contact .rights-line p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.company-contact .rights-line p a {
+    color: #ffffff;
+}
+
+.menu-btn {
+    display: none;
+}
